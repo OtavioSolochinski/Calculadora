@@ -1,3 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-yu8gyuhgbuihk
+﻿decimal resultado = Calculadora.Calculadora.Divisao(10, 2);
+Console.WriteLine($" Resultado: {resultado}");
