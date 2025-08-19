@@ -42,7 +42,7 @@ namespace Calculadora
                              //Somar(numero1,numero2);
                              break;
                          case '-':
-                             //Subtrair(numero1, numero2);
+                             Subtrair(numero1, numero2);
                              break;
                          case '*':
                              Console.WriteLine($"O resultado é {Multiplicar(numero1,numero2)}");
@@ -52,26 +52,19 @@ namespace Calculadora
                          case '/':
                             Dividir(numero1, numero2);
                              break;
-
-                        }
+                         }
                     continuar = true;
                 }
-
-
-
-
-
             } while (continuar);
         }
 
+      
         public static decimal Multiplicar(decimal numero1, decimal numero2)
         {
             return numero1 * numero2;
         }
 
-
-
-
+      
         public static decimal Dividir(decimal numero1, decimal numero2)
         {
             if (numero1 == 0 || numero2 ==0)
@@ -82,8 +75,12 @@ namespace Calculadora
             {
                 return numero1 / numero2;
             }
-
-
+        }
+      
+      
+        public decimal Subtracao(decimal numero1, decimal numero2)
+        {
+            return numero1 - numero2;
         }
     }
 }
