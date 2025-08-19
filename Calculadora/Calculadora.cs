@@ -8,5 +8,9 @@ namespace Calculadora
 {
     internal class Calculadora
     {
+        public decimal Subtracao(decimal numero1, decimal numero2)
+        {
+            return numero1 - numero2;x''
+        }
     }
 }
