@@ -39,11 +39,15 @@ namespace Calculadora
                     switch (operador)
                         {
                          case '+':
-                             //Somar(numero1,numero2);
-                             break;
+                            Somar(numero1,numero2);
+                            Thread.Sleep(2000);
+                            Console.Clear();
+                            break;
                          case '-':
                              Subtrair(numero1, numero2);
-                             break;
+                            Thread.Sleep(2000);
+                            Console.Clear();
+                            break;
                          case '*':
                              Console.WriteLine($"O resultado é {Multiplicar(numero1,numero2)}");
                              Thread.Sleep(2000);
@@ -51,7 +55,9 @@ namespace Calculadora
                              break;
                          case '/':
                             Dividir(numero1, numero2);
-                             break;
+                            Thread.Sleep(2000);
+                            Console.Clear();
+                            break;
 
                         }
                     continuar = true;
