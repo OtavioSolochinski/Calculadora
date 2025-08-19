@@ -50,7 +50,7 @@ namespace Calculadora
                              Console.Clear();
                              break;
                          case '/':
-                            //Dividir(numero1,numero2)
+                            Dividir(numero1, numero2);
                              break;
 
                         }
@@ -72,7 +72,7 @@ namespace Calculadora
 
 
 
-        public static decimal Divisao(decimal numero1, decimal numero2)
+        public static decimal Dividir(decimal numero1, decimal numero2)
         {
             if (numero1 == 0 || numero2 ==0)
             {
