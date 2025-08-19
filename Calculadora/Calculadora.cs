@@ -12,6 +12,8 @@ namespace Calculadora
         {
             Console.WriteLine("Seja bem vindo a calculadora!");
             Console.WriteLine("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+            Console.WriteLine("Utilize:\n+ para somar\n- para subtrair\n* para multiplicar\n/ para dividir");
+            Console.WriteLine("Digite SAIR para encerrar o programa!");
             bool continuar = false;
             do
             {
@@ -25,7 +27,7 @@ namespace Calculadora
                 else
                 {
 
-                    char[] operadores = { '+', '-', '*', '/' };
+                    char[] operadores = { '+', '-', '*', '/'};
 
                     char operador = entrada.First(c => operadores.Contains(c));
         
@@ -98,5 +100,7 @@ namespace Calculadora
         {
             return numero1 - numero2;
         }
+
+
     }
 }
